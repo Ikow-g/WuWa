@@ -11,28 +11,44 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="https://wutheringwaves.gg/wp-content/uploads/sites/8/2023/08/Wuthering-Waves-Logo.png" alt="" height="30">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tier List</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Characters</a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">
-              <img src="" alt="#">
-            </a>
-          </div>
-        </li>
+  <div class="container-md" style="display: flex; flex-direction:column; min-height:100vh;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://wutheringwaves.gg/wp-content/uploads/sites/8/2023/08/Wuthering-Waves-Logo.png" alt="" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tier List</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Characters</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">
+                <img src="" alt="#">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main style="flex:1;">
+      @yield('content')
+    </main>
+  
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terms</a></li>
       </ul>
-    </div>
-  </nav>
-
-  @yield('content')
+      <p class="text-center text-muted">© 2024 WuWa, Inc</p>
+    </footer>
+  </div>
 
 
 
